@@ -1,0 +1,652 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /data/tools/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'piyush' on host 'uwlogin.cern.ch' (Linux_x86_64 version 3.10.0-1160.36.2.el7.x86_64) on Tue Dec 28 10:10:23 EST 2021
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core) "
+INFO: [HLS 200-10] In directory '/data/piyush/RCTTDR/BitStreamRCTTDRSLRABv2/CMSSW_10_2_10/src/CMSPhase2RCT/hls/RCTSLRA/vivado_hls'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-10] Opening project '/data/piyush/RCTTDR/BitStreamRCTTDRSLRABv2/CMSSW_10_2_10/src/CMSPhase2RCT/hls/RCTSLRA/vivado_hls/proj'.
+INFO: [HLS 200-10] Adding design file 'src/algo_top_parameters_SLRA.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/algo_top_SLRA.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/algo_top_SLRA.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/bitonicSort16_SLRA.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/bitonicSort16_SLRA.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'src/algo_top_tb_SLRA.cpp' to the project
+WARNING: [HLS 200-40] Cannot find test bench file '../../common/APxLinkData.hh'
+WARNING: [HLS 200-40] Cannot find test bench file '../../common/APxLinkData.cpp'
+INFO: [HLS 200-10] Adding test bench file 'data/test_in.txt' to the project
+INFO: [HLS 200-10] Adding test bench file 'data/test_out_ref.txt' to the project
+INFO: [HLS 200-10] Opening solution '/data/piyush/RCTTDR/BitStreamRCTTDRSLRABv2/CMSSW_10_2_10/src/CMSPhase2RCT/hls/RCTSLRA/vivado_hls/proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with a period of 4.167ns.
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+***** C/RTL SYNTHESIS *****
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/bitonicSort16_SLRA.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/algo_top_SLRA.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 192.207 ; free physical = 16951 ; free virtual = 80501
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 980.746 ; gain = 192.207 ; free physical = 16951 ; free virtual = 80501
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:198).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:175).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:167).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:161).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:135).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:132).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:126).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:123).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:107).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:101).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRA.cpp:74).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRA.cpp:71).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRA.cpp:68).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRA.cpp:65).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRA.cpp:55).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRA.cpp:52).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRA.cpp:49).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRA.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (src/bitonicSort16_SLRA.cpp:37).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (src/bitonicSort16_SLRA.cpp:34).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (src/bitonicSort16_SLRA.cpp:25).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (src/bitonicSort16_SLRA.cpp:22).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:191).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:148).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:115).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:153).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:116).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:184).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:141).
+INFO: [XFORM 203-603] Inlining function 'EightinGreatFir' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:142).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 980.746 ; gain = 192.207 ; free physical = 16873 ; free virtual = 80422
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'getPeakBin15NSLRA' into 'getClusterPosSLRA' (src/algo_top_SLRA.cpp:528) automatically.
+INFO: [XFORM 203-602] Inlining function 'packClusterSLRA' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:896) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:900) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems.1' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:921) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:922) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:922) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:925) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:925) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:932) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:933) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:935) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:935) automatically.
+INFO: [XFORM 203-602] Inlining function 'tower_t::et' into 'processOutLinkSLRA' (src/algo_top_SLRA.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::operator unsigned long' into 'processOutLinkSLRA' (src/algo_top_SLRA.cpp:52) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'algo_top_SLRA' (src/algo_top_SLRA.cpp:1060) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'algo_top_SLRA' (src/algo_top_SLRA.cpp:1060) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'algo_top_SLRA' (src/algo_top_SLRA.cpp:1060) automatically.
+WARNING: [SYNCHK 200-23] src/algo_top_SLRA.cpp:45: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1050.336 ; gain = 261.797 ; free physical = 16849 ; free virtual = 80398
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'algo_top_SLRA' (src/algo_top_SLRA.cpp:974).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'processOutLinkSLRA' (src/algo_top_SLRA.cpp:36).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getTowerEtSLRA' (src/algo_top_SLRA.cpp:456).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:79).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:906).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'RemoveTmpSLRA' (src/algo_top_SLRA.cpp:561).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getBremsValPosSLRA' (src/algo_top_SLRA.cpp:591).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getBremsValNegSLRA' (src/algo_top_SLRA.cpp:671).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getClusterValSLRA' (src/algo_top_SLRA.cpp:752).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'processInLinkSLRA' (src/algo_top_SLRA.cpp:5).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:982) in function 'algo_top_SLRA' completely with a factor of 14.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRA.cpp:982) in function 'algo_top_SLRA' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:985) in function 'algo_top_SLRA' completely with a factor of 14.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRA.cpp:985) in function 'algo_top_SLRA' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRA.cpp:988) in function 'algo_top_SLRA' completely with a factor of 14.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRA.cpp:988) in function 'algo_top_SLRA' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRA.cpp:995) in function 'algo_top_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/algo_top_SLRA.cpp:996) in function 'algo_top_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (src/algo_top_SLRA.cpp:997) in function 'algo_top_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7' (src/algo_top_SLRA.cpp:999) in function 'algo_top_SLRA' completely with a factor of 35.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8' (src/algo_top_SLRA.cpp:1053) in function 'algo_top_SLRA' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (src/algo_top_SLRA.cpp:1058) in function 'algo_top_SLRA' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9' (src/algo_top_SLRA.cpp:1078) in function 'algo_top_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10' (src/algo_top_SLRA.cpp:1079) in function 'algo_top_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-11' (src/algo_top_SLRA.cpp:1081) in function 'algo_top_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-12' (src/algo_top_SLRA.cpp:1082) in function 'algo_top_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-13' (src/algo_top_SLRA.cpp:1091) in function 'algo_top_SLRA' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14' (src/algo_top_SLRA.cpp:1097) in function 'algo_top_SLRA' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:42) in function 'processOutLinkSLRA' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:49) in function 'processOutLinkSLRA' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:470) in function 'getTowerEtSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRA.cpp:472) in function 'getTowerEtSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:477) in function 'getTowerEtSLRA' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRA.cpp:479) in function 'getTowerEtSLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9' (src/bitonicSort16_SLRA.cpp:86) in function 'bitonicSort16_SLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10' (src/bitonicSort16_SLRA.cpp:99) in function 'bitonicSort16_SLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-11' (src/bitonicSort16_SLRA.cpp:105) in function 'bitonicSort16_SLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-12' (src/bitonicSort16_SLRA.cpp:113) in function 'bitonicSort16_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-13' (src/bitonicSort16_SLRA.cpp:121) in function 'bitonicSort16_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14' (src/bitonicSort16_SLRA.cpp:130) in function 'bitonicSort16_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-15' (src/bitonicSort16_SLRA.cpp:146) in function 'bitonicSort16_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16' (src/bitonicSort16_SLRA.cpp:151) in function 'bitonicSort16_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-17' (src/bitonicSort16_SLRA.cpp:158) in function 'bitonicSort16_SLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18' (src/bitonicSort16_SLRA.cpp:165) in function 'bitonicSort16_SLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-19' (src/bitonicSort16_SLRA.cpp:173) in function 'bitonicSort16_SLRA' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-20' (src/bitonicSort16_SLRA.cpp:181) in function 'bitonicSort16_SLRA' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-21' (src/bitonicSort16_SLRA.cpp:189) in function 'bitonicSort16_SLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-22' (src/bitonicSort16_SLRA.cpp:196) in function 'bitonicSort16_SLRA' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:913) in function 'stitchClustersSLRA' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:919) in function 'stitchClustersSLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRA.cpp:923) in function 'stitchClustersSLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2' (src/algo_top_SLRA.cpp:947) in function 'stitchClustersSLRA' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:565) in function 'RemoveTmpSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRA.cpp:567) in function 'RemoveTmpSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:573) in function 'RemoveTmpSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRA.cpp:575) in function 'RemoveTmpSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRA.cpp:583) in function 'RemoveTmpSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRA.cpp:585) in function 'RemoveTmpSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:610) in function 'getBremsValPosSLRA' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRA.cpp:612) in function 'getBremsValPosSLRA' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:617) in function 'getBremsValPosSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRA.cpp:619) in function 'getBremsValPosSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRA.cpp:631) in function 'getBremsValPosSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRA.cpp:635) in function 'getBremsValPosSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRA.cpp:662) in function 'getBremsValPosSLRA' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:690) in function 'getBremsValNegSLRA' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRA.cpp:692) in function 'getBremsValNegSLRA' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:697) in function 'getBremsValNegSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRA.cpp:699) in function 'getBremsValNegSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRA.cpp:711) in function 'getBremsValNegSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRA.cpp:715) in function 'getBremsValNegSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRA.cpp:742) in function 'getBremsValNegSLRA' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:775) in function 'getClusterValSLRA' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRA.cpp:777) in function 'getClusterValSLRA' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRA.cpp:782) in function 'getClusterValSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRA.cpp:784) in function 'getClusterValSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRA.cpp:796) in function 'getClusterValSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRA.cpp:800) in function 'getClusterValSLRA' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRA.cpp:839) in function 'getClusterValSLRA' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRA.cpp:17) in function 'processInLinkSLRA' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRA.cpp:19) in function 'processInLinkSLRA' completely with a factor of 20.
+INFO: [XFORM 203-102] Automatically partitioning small array 'inClusterLink1.data.V' (src/algo_top_SLRA.cpp:1079) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V' (src/algo_top_SLRA.cpp:974) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V' (src/algo_top_SLRA.cpp:974) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.energy.V' (src/algo_top_SLRA.cpp:982) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.timing.V' (src/algo_top_SLRA.cpp:982) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.energy.V' (src/algo_top_SLRA.cpp:985) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.timing.V' (src/algo_top_SLRA.cpp:985) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.energy.V' (src/algo_top_SLRA.cpp:988) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.timing.V' (src/algo_top_SLRA.cpp:988) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sort_clusterIn.data.V' (src/algo_top_SLRA.cpp:995) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sort_clusterInStitched.data.V' (src/algo_top_SLRA.cpp:996) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sort_clusterOut.data.V' (src/algo_top_SLRA.cpp:997) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEt.data.V' (src/algo_top_SLRA.cpp:999) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtECAL1'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtECAL2'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtECAL3'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inClusterLink0.data.V' (src/algo_top_SLRA.cpp:1078) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inTowerLink0.data.V' (src/algo_top_SLRA.cpp:1081) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inTowerLink1.data.V' (src/algo_top_SLRA.cpp:1082) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:463) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtN.V' (src/algo_top_SLRA.cpp:467) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'a.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'c.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'd.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'e.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'f.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'g.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'h.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'l.data.V' (src/bitonicSort16_SLRA.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:595) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi0eta.V' (src/algo_top_SLRA.cpp:598) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi1eta.V' (src/algo_top_SLRA.cpp:598) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi2eta.V' (src/algo_top_SLRA.cpp:598) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi3eta.V' (src/algo_top_SLRA.cpp:598) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi4eta.V' (src/algo_top_SLRA.cpp:598) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'eta_slice.V' (src/algo_top_SLRA.cpp:605) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:675) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi0eta.V' (src/algo_top_SLRA.cpp:678) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi1eta.V' (src/algo_top_SLRA.cpp:678) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi2eta.V' (src/algo_top_SLRA.cpp:678) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi3eta.V' (src/algo_top_SLRA.cpp:678) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi4eta.V' (src/algo_top_SLRA.cpp:678) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'eta_slice.V' (src/algo_top_SLRA.cpp:685) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:756) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi0eta.V' (src/algo_top_SLRA.cpp:759) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi1eta.V' (src/algo_top_SLRA.cpp:759) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi2eta.V' (src/algo_top_SLRA.cpp:759) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi3eta.V' (src/algo_top_SLRA.cpp:759) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi4eta.V' (src/algo_top_SLRA.cpp:759) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'eta_slice.V' (src/algo_top_SLRA.cpp:766) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inClusterLink1.data.V' (src/algo_top_SLRA.cpp:1079) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.energy.V' (src/algo_top_SLRA.cpp:982) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.timing.V' (src/algo_top_SLRA.cpp:982) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.energy.V' (src/algo_top_SLRA.cpp:985) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.timing.V' (src/algo_top_SLRA.cpp:985) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.energy.V' (src/algo_top_SLRA.cpp:988) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.timing.V' (src/algo_top_SLRA.cpp:988) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:463) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtN.V' (src/algo_top_SLRA.cpp:467) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:595) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:675) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRA.cpp:756) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtN.V' (src/algo_top_SLRA.cpp:467) in dimension 3 completely.
+INFO: [XFORM 203-602] Inlining function 'bestOf2SLRA' into 'getPeakBin15NSLRA' (src/algo_top_SLRA.cpp:431) automatically.
+INFO: [XFORM 203-602] Inlining function 'getClusterPosSLRA' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:876) automatically.
+INFO: [XFORM 203-602] Inlining function 'packClusterSLRA' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:896) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:900) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:901) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:921) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:946) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:922) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:925) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:925) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:935) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:935) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:932) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5' into 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:933) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'bitonicSort16_SLRA' (src/bitonicSort16_SLRA.cpp:11->src/bitonicSort16_SLRA.cpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'tower_t::et' into 'processOutLinkSLRA' (src/algo_top_SLRA.cpp:45) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::operator unsigned long' into 'processOutLinkSLRA' (src/algo_top_SLRA.cpp:52) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'algo_top_SLRA' (src/algo_top_SLRA.cpp:1060) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'algo_top_SLRA' (src/algo_top_SLRA.cpp:1060) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'algo_top_SLRA' (src/algo_top_SLRA.cpp:1060) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRA.cpp:906:33) in function 'stitchClustersSLRA'... converting 245 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (src/algo_top_SLRA.cpp:903:1) in function 'getRegion3x4SLRA'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRA.cpp:752:39) in function 'getClusterValSLRA'... converting 31 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRA.cpp:591:40) in function 'getBremsValPosSLRA'... converting 31 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRA.cpp:671:40) in function 'getBremsValNegSLRA'... converting 31 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (src/algo_top_SLRA.cpp:1112:1) in function 'algo_top_SLRA'... converting 421 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRA.cpp:561:28) to (src/algo_top_SLRA.cpp:589:1) in function 'RemoveTmpSLRA'... converting 5 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'getPeakBin15NSLRA' into 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:528->src/algo_top_SLRA.cpp:876) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'stitchClustersSLRA' (src/algo_top_SLRA.cpp:906)...300 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getTowerEtSLRA' (src/algo_top_SLRA.cpp:456)...228 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getRegion3x4SLRA' (src/algo_top_SLRA.cpp:861)...4 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getClusterValSLRA' (src/algo_top_SLRA.cpp:752)...21 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getBremsValPosSLRA' (src/algo_top_SLRA.cpp:591)...18 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getBremsValNegSLRA' (src/algo_top_SLRA.cpp:671)...18 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:11:11 ; elapsed = 00:11:16 . Memory (MB): peak = 1176.746 ; gain = 388.207 ; free physical = 16674 ; free virtual = 80224
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:14:19 ; elapsed = 00:14:23 . Memory (MB): peak = 1948.746 ; gain = 1160.207 ; free physical = 15934 ; free virtual = 79485
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'algo_top_SLRA' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processInLinkSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'processInLinkSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 864.14 seconds; current allocated memory: 1.097 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.89 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'initStructureSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'initStructureSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.69 seconds; current allocated memory: 1.105 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.27 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bestOf2SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'bestOf2SLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.26 seconds; current allocated memory: 1.107 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getPeakBin20NSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getPeakBin20NSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 1.107 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 1.108 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getClusterValSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getClusterValSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 25.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.8 seconds; current allocated memory: 1.121 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 12.75 seconds; current allocated memory: 1.144 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getBremsValNegSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getBremsValNegSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.58 seconds; current allocated memory: 1.162 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.73 seconds; current allocated memory: 1.180 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getBremsValPosSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getBremsValPosSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.86 seconds; current allocated memory: 1.197 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.46 seconds; current allocated memory: 1.215 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RemoveTmpSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'RemoveTmpSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.04 seconds; current allocated memory: 1.231 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.79 seconds; current allocated memory: 1.245 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getRegion3x4SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getRegion3x4SLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.97 seconds; current allocated memory: 1.252 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 28.38 seconds; current allocated memory: 1.293 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stitchClustersSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'stitchClustersSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 34.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.32 seconds; current allocated memory: 1.321 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 7.05 seconds; current allocated memory: 1.333 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitonicSort16_SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'bitonicSort16_SLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 5, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.37 seconds; current allocated memory: 1.336 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 1.337 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getTowerEtSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getTowerEtSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 5, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.78 seconds; current allocated memory: 1.340 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.19 seconds; current allocated memory: 1.343 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processOutLinkSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'processOutLinkSLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.42 seconds; current allocated memory: 1.343 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 1.344 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'algo_top_SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'algo_top_SLRA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 231.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.56 seconds; current allocated memory: 1.362 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 71.56 seconds; current allocated memory: 1.497 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processInLinkSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processInLinkSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 106.21 seconds; current allocated memory: 2.841 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'initStructureSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'initStructureSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 9.22 seconds; current allocated memory: 3.064 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bestOf2SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bestOf2SLRA'.
+INFO: [HLS 200-111]  Elapsed time: 1.77 seconds; current allocated memory: 3.065 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getPeakBin20NSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getPeakBin20NSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 3.066 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getClusterValSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getClusterValSLRA' is 38042 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getClusterValSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 6.57 seconds; current allocated memory: 3.112 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getBremsValNegSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getBremsValNegSLRA' is 21699 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getBremsValNegSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 35.97 seconds; current allocated memory: 3.248 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getBremsValPosSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getBremsValPosSLRA' is 21730 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getBremsValPosSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 30.24 seconds; current allocated memory: 3.363 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RemoveTmpSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'RemoveTmpSLRA' is 12135 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RemoveTmpSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 85.24 seconds; current allocated memory: 3.664 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getRegion3x4SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getRegion3x4SLRA' is 99848 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getRegion3x4SLRA'.
+INFO: [HLS 200-111]  Elapsed time: 203.05 seconds; current allocated memory: 172.553 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stitchClustersSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stitchClustersSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 30.91 seconds; current allocated memory: 228.429 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitonicSort16_SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitonicSort16_SLRA'.
+INFO: [HLS 200-111]  Elapsed time: 18.17 seconds; current allocated memory: 278.358 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getTowerEtSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getTowerEtSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 6.28 seconds; current allocated memory: 290.718 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processOutLinkSLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processOutLinkSLRA'.
+INFO: [HLS 200-111]  Elapsed time: 7.57 seconds; current allocated memory: 306.291 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'algo_top_SLRA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_0_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_2_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_3_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_4_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_5_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_6_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_7_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_8_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_9_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_10_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_11_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_12_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_13_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_14_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_15_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_16_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_17_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_18_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_19_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_20_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_21_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_22_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_23_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_24_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_25_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_26_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_27_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_28_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_29_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_30_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_in_31_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_out_0_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRA/link_out_1_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'algo_top_SLRA' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-104] Estimated max fanout for 'algo_top_SLRA' is 6120 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter19 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'algo_top_SLRA'.
+INFO: [HLS 200-111]  Elapsed time: 64.46 seconds; current allocated memory: 1.301 GB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:28:18 ; elapsed = 00:31:11 . Memory (MB): peak = 7444.793 ; gain = 6656.254 ; free physical = 10638 ; free virtual = 74217
+INFO: [VHDL 208-304] Generating VHDL RTL for algo_top_SLRA.
+INFO: [VLOG 209-307] Generating Verilog RTL for algo_top_SLRA.
+***** C/RTL SYNTHESIS COMPLETED IN 0h31m9s *****
+***** EXPORT IP *****
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 28 10:41:57 2021...
+***** EXPORT IP COMPLETED IN 0h0m22s *****
+***** GENERATING WRAPPERS *****
+python: can't open file '../wrapper_generator.py': [Errno 2] No such file or directory
+    while executing
+"exec python ../wrapper_generator.py src/algo_top_parameters.h --wrapper ../rtl/algo_top_wrapper.vhd"
+    invoked from within
+"if {$opt(export)} {
+  puts "***** EXPORT IP *****"
+  set time_start [clock clicks -milliseconds]
+  export_design -format ip_catalog
+  set time_end [cl..."
+    (file "run_hls.tcl" line 75)
+    invoked from within
+"source run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total elapsed time: 1898.15 seconds; peak allocated memory: 3.664 GB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Dec 28 10:42:01 2021...

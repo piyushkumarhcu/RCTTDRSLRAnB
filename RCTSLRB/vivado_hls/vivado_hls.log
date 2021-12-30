@@ -1,0 +1,722 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /data/tools/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'piyush' on host 'uwlogin.cern.ch' (Linux_x86_64 version 3.10.0-1160.36.2.el7.x86_64) on Tue Dec 28 11:31:24 EST 2021
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core) "
+INFO: [HLS 200-10] In directory '/data/piyush/RCTTDR/BitStreamRCTTDRSLRABv2/CMSSW_10_2_10/src/CMSPhase2RCT/hls/RCTSLRB/vivado_hls'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-10] Opening project '/data/piyush/RCTTDR/BitStreamRCTTDRSLRABv2/CMSSW_10_2_10/src/CMSPhase2RCT/hls/RCTSLRB/vivado_hls/proj'.
+INFO: [HLS 200-10] Adding design file 'src/algo_top_parameters_SLRB.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/algo_top_SLRB.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/algo_top_SLRB.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'src/bitonicSort16_SLRB.h' to the project
+INFO: [HLS 200-10] Adding design file 'src/bitonicSort16_SLRB.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'src/algo_top_tb_SLRB.cpp' to the project
+WARNING: [HLS 200-40] Cannot find test bench file '../../common/APxLinkData.hh'
+WARNING: [HLS 200-40] Cannot find test bench file '../../common/APxLinkData.cpp'
+INFO: [HLS 200-10] Adding test bench file 'data/test_in.txt' to the project
+INFO: [HLS 200-10] Adding test bench file 'data/test_out_ref.txt' to the project
+INFO: [HLS 200-10] Opening solution '/data/piyush/RCTTDR/BitStreamRCTTDRSLRABv2/CMSSW_10_2_10/src/CMSPhase2RCT/hls/RCTSLRB/vivado_hls/proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with a period of 4.167ns.
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+***** C/RTL SYNTHESIS *****
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/bitonicSort16_SLRB.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/algo_top_SLRB.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 980.746 ; gain = 192.207 ; free physical = 16143 ; free virtual = 80471
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 980.746 ; gain = 192.207 ; free physical = 16143 ; free virtual = 80471
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:198).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:175).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:167).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:161).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:135).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:132).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:126).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:123).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:107).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:101).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRB.cpp:74).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRB.cpp:71).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRB.cpp:68).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinGreatFir' (src/bitonicSort16_SLRB.cpp:65).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRB.cpp:55).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRB.cpp:52).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRB.cpp:49).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'EightinSmallFir' (src/bitonicSort16_SLRB.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (src/bitonicSort16_SLRB.cpp:37).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinGreatFir' (src/bitonicSort16_SLRB.cpp:34).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (src/bitonicSort16_SLRB.cpp:25).
+INFO: [XFORM 203-603] Inlining function 'AscendDescend' into 'FourinSmallFir' (src/bitonicSort16_SLRB.cpp:22).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:191).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:148).
+INFO: [XFORM 203-603] Inlining function 'FourinSmallFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:115).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:153).
+INFO: [XFORM 203-603] Inlining function 'FourinGreatFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:116).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:184).
+INFO: [XFORM 203-603] Inlining function 'EightinSmallFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:141).
+INFO: [XFORM 203-603] Inlining function 'EightinGreatFir' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:142).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 980.746 ; gain = 192.207 ; free physical = 16056 ; free virtual = 80384
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'getPeakBin15NSLRB' into 'getClusterPosSLRB' (src/algo_top_SLRB.cpp:601) automatically.
+INFO: [XFORM 203-602] Inlining function 'packClusterSLRB' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:969) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:973) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems.1' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:996) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:997) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:997) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1001) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1001) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1008) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1009) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1011) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1011) automatically.
+INFO: [XFORM 203-602] Inlining function 'tower_t::et' into 'processOutLinkSLRB' (src/algo_top_SLRB.cpp:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::operator unsigned long' into 'processOutLinkSLRB' (src/algo_top_SLRB.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1147) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1147) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1147) automatically.
+WARNING: [SYNCHK 200-23] src/algo_top_SLRB.cpp:116: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 982.477 ; gain = 193.938 ; free physical = 16030 ; free virtual = 80358
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1051).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'processOutLinkSLRB' (src/algo_top_SLRB.cpp:107).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getTowerEtSLRB' (src/algo_top_SLRB.cpp:530).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:79).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:981).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'RemoveTmpSLRB' (src/algo_top_SLRB.cpp:634).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getBremsValPosSLRB' (src/algo_top_SLRB.cpp:664).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getBremsValNegSLRB' (src/algo_top_SLRB.cpp:744).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getClusterValSLRB' (src/algo_top_SLRB.cpp:825).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'processInLinkSLRB' (src/algo_top_SLRB.cpp:6).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:1059) in function 'algo_top_SLRB' completely with a factor of 14.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRB.cpp:1059) in function 'algo_top_SLRB' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:1062) in function 'algo_top_SLRB' completely with a factor of 14.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:1062) in function 'algo_top_SLRB' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRB.cpp:1065) in function 'algo_top_SLRB' completely with a factor of 14.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRB.cpp:1065) in function 'algo_top_SLRB' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRB.cpp:1068) in function 'algo_top_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1' (src/algo_top_SLRB.cpp:1068) in function 'algo_top_SLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/algo_top_SLRB.cpp:1068) in function 'algo_top_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1' (src/algo_top_SLRB.cpp:1068) in function 'algo_top_SLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (src/algo_top_SLRB.cpp:1068) in function 'algo_top_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1' (src/algo_top_SLRB.cpp:1068) in function 'algo_top_SLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7' (src/algo_top_SLRB.cpp:1069) in function 'algo_top_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (src/algo_top_SLRB.cpp:1069) in function 'algo_top_SLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8' (src/algo_top_SLRB.cpp:1069) in function 'algo_top_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (src/algo_top_SLRB.cpp:1069) in function 'algo_top_SLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9' (src/algo_top_SLRB.cpp:1069) in function 'algo_top_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9.1' (src/algo_top_SLRB.cpp:1069) in function 'algo_top_SLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10' (src/algo_top_SLRB.cpp:1082) in function 'algo_top_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-11' (src/algo_top_SLRB.cpp:1083) in function 'algo_top_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-12' (src/algo_top_SLRB.cpp:1084) in function 'algo_top_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-13' (src/algo_top_SLRB.cpp:1086) in function 'algo_top_SLRB' completely with a factor of 35.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14' (src/algo_top_SLRB.cpp:1140) in function 'algo_top_SLRB' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14.1' (src/algo_top_SLRB.cpp:1145) in function 'algo_top_SLRB' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-15' (src/algo_top_SLRB.cpp:1176) in function 'algo_top_SLRB' completely with a factor of 71.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16' (src/algo_top_SLRB.cpp:1179) in function 'algo_top_SLRB' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'Loop-17' (src/algo_top_SLRB.cpp:1190) in function 'algo_top_SLRB' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18' (src/algo_top_SLRB.cpp:1191) in function 'algo_top_SLRB' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'Loop-19' (src/algo_top_SLRB.cpp:1192) in function 'algo_top_SLRB' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'Loop-20' (src/algo_top_SLRB.cpp:1193) in function 'algo_top_SLRB' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'Loop-21' (src/algo_top_SLRB.cpp:1194) in function 'algo_top_SLRB' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'Loop-22' (src/algo_top_SLRB.cpp:1195) in function 'algo_top_SLRB' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'Loop-23' (src/algo_top_SLRB.cpp:1197) in function 'algo_top_SLRB' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-24' (src/algo_top_SLRB.cpp:1198) in function 'algo_top_SLRB' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-25' (src/algo_top_SLRB.cpp:1199) in function 'algo_top_SLRB' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-26' (src/algo_top_SLRB.cpp:1200) in function 'algo_top_SLRB' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-27' (src/algo_top_SLRB.cpp:1201) in function 'algo_top_SLRB' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-28' (src/algo_top_SLRB.cpp:1202) in function 'algo_top_SLRB' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-29' (src/algo_top_SLRB.cpp:1218) in function 'algo_top_SLRB' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'Loop-30' (src/algo_top_SLRB.cpp:1228) in function 'algo_top_SLRB' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:113) in function 'processOutLinkSLRB' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:120) in function 'processOutLinkSLRB' completely with a factor of 12.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:544) in function 'getTowerEtSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRB.cpp:546) in function 'getTowerEtSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:551) in function 'getTowerEtSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:553) in function 'getTowerEtSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9' (src/bitonicSort16_SLRB.cpp:86) in function 'bitonicSort16_SLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10' (src/bitonicSort16_SLRB.cpp:99) in function 'bitonicSort16_SLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-11' (src/bitonicSort16_SLRB.cpp:105) in function 'bitonicSort16_SLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-12' (src/bitonicSort16_SLRB.cpp:113) in function 'bitonicSort16_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-13' (src/bitonicSort16_SLRB.cpp:121) in function 'bitonicSort16_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14' (src/bitonicSort16_SLRB.cpp:130) in function 'bitonicSort16_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-15' (src/bitonicSort16_SLRB.cpp:146) in function 'bitonicSort16_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16' (src/bitonicSort16_SLRB.cpp:151) in function 'bitonicSort16_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-17' (src/bitonicSort16_SLRB.cpp:158) in function 'bitonicSort16_SLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18' (src/bitonicSort16_SLRB.cpp:165) in function 'bitonicSort16_SLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-19' (src/bitonicSort16_SLRB.cpp:173) in function 'bitonicSort16_SLRB' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-20' (src/bitonicSort16_SLRB.cpp:181) in function 'bitonicSort16_SLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-21' (src/bitonicSort16_SLRB.cpp:189) in function 'bitonicSort16_SLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-22' (src/bitonicSort16_SLRB.cpp:196) in function 'bitonicSort16_SLRB' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:988) in function 'stitchClustersSLRB' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:994) in function 'stitchClustersSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:998) in function 'stitchClustersSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2' (src/algo_top_SLRB.cpp:1023) in function 'stitchClustersSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:638) in function 'RemoveTmpSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRB.cpp:640) in function 'RemoveTmpSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:646) in function 'RemoveTmpSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:648) in function 'RemoveTmpSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRB.cpp:656) in function 'RemoveTmpSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRB.cpp:658) in function 'RemoveTmpSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:683) in function 'getBremsValPosSLRB' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRB.cpp:685) in function 'getBremsValPosSLRB' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:690) in function 'getBremsValPosSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:692) in function 'getBremsValPosSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRB.cpp:704) in function 'getBremsValPosSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRB.cpp:708) in function 'getBremsValPosSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRB.cpp:735) in function 'getBremsValPosSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:763) in function 'getBremsValNegSLRB' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRB.cpp:765) in function 'getBremsValNegSLRB' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:770) in function 'getBremsValNegSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:772) in function 'getBremsValNegSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRB.cpp:784) in function 'getBremsValNegSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRB.cpp:788) in function 'getBremsValNegSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRB.cpp:815) in function 'getBremsValNegSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:848) in function 'getClusterValSLRB' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRB.cpp:850) in function 'getClusterValSLRB' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:855) in function 'getClusterValSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:857) in function 'getClusterValSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRB.cpp:869) in function 'getClusterValSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRB.cpp:873) in function 'getClusterValSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRB.cpp:912) in function 'getClusterValSLRB' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top_SLRB.cpp:24) in function 'processInLinkSLRB' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (src/algo_top_SLRB.cpp:26) in function 'processInLinkSLRB' completely with a factor of 20.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/algo_top_SLRB.cpp:42) in function 'processInLinkSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (src/algo_top_SLRB.cpp:44) in function 'processInLinkSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (src/algo_top_SLRB.cpp:50) in function 'processInLinkSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (src/algo_top_SLRB.cpp:52) in function 'processInLinkSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/algo_top_SLRB.cpp:59) in function 'processInLinkSLRB' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1' (src/algo_top_SLRB.cpp:61) in function 'processInLinkSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (src/algo_top_SLRB.cpp:69) in function 'processInLinkSLRB' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1' (src/algo_top_SLRB.cpp:71) in function 'processInLinkSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (src/algo_top_SLRB.cpp:78) in function 'processInLinkSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1' (src/algo_top_SLRB.cpp:80) in function 'processInLinkSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7' (src/algo_top_SLRB.cpp:87) in function 'processInLinkSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (src/algo_top_SLRB.cpp:89) in function 'processInLinkSLRB' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8' (src/algo_top_SLRB.cpp:96) in function 'processInLinkSLRB' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (src/algo_top_SLRB.cpp:98) in function 'processInLinkSLRB' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 'SumE1.V' (src/algo_top_SLRB.cpp:1132) automatically.
+INFO: [XFORM 203-102] Partitioning array 'SumE2.V' (src/algo_top_SLRB.cpp:1133) automatically.
+INFO: [XFORM 203-102] Partitioning array 'SumE3.V' (src/algo_top_SLRB.cpp:1134) automatically.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V' (src/algo_top_SLRB.cpp:1051) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V' (src/algo_top_SLRB.cpp:1051) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.energy.V' (src/algo_top_SLRB.cpp:1059) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.timing.V' (src/algo_top_SLRB.cpp:1059) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.energy.V' (src/algo_top_SLRB.cpp:1062) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.timing.V' (src/algo_top_SLRB.cpp:1062) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.energy.V' (src/algo_top_SLRB.cpp:1065) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.timing.V' (src/algo_top_SLRB.cpp:1065) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_1.et.V' (src/algo_top_SLRB.cpp:1068) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_2.et.V' (src/algo_top_SLRB.cpp:1068) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_3.et.V' (src/algo_top_SLRB.cpp:1068) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_4.et.V' (src/algo_top_SLRB.cpp:1069) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_5.et.V' (src/algo_top_SLRB.cpp:1069) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_6.et.V' (src/algo_top_SLRB.cpp:1069) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sort_clusterIn.data.V' (src/algo_top_SLRB.cpp:1082) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sort_clusterInStitched.data.V' (src/algo_top_SLRB.cpp:1083) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'sort_clusterOut.data.V' (src/algo_top_SLRB.cpp:1084) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEt.data.V' (src/algo_top_SLRB.cpp:1086) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtECAL1'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtECAL2'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtECAL3'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALtower.et.V' (src/algo_top_SLRB.cpp:1176) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InHCALTowerLink0.et.V' (src/algo_top_SLRB.cpp:1190) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InHCALTowerLink1.et.V' (src/algo_top_SLRB.cpp:1191) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InHCALTowerLink2.et.V' (src/algo_top_SLRB.cpp:1192) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InHCALTowerLink3.et.V' (src/algo_top_SLRB.cpp:1193) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InHCALTowerLink4.et.V' (src/algo_top_SLRB.cpp:1194) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InHCALTowerLink5.et.V' (src/algo_top_SLRB.cpp:1195) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InTowerLink0.data.V' (src/algo_top_SLRB.cpp:1197) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InTowerLink1.data.V' (src/algo_top_SLRB.cpp:1198) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InTowerLink2.data.V' (src/algo_top_SLRB.cpp:1199) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InTowerLink3.data.V' (src/algo_top_SLRB.cpp:1200) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InTowerLink4.data.V' (src/algo_top_SLRB.cpp:1201) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'InTowerLink5.data.V' (src/algo_top_SLRB.cpp:1202) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:537) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtN.V' (src/algo_top_SLRB.cpp:541) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'a.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'c.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'd.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'e.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'f.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'g.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'h.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'l.data.V' (src/bitonicSort16_SLRB.cpp:86) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:668) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi0eta.V' (src/algo_top_SLRB.cpp:671) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi1eta.V' (src/algo_top_SLRB.cpp:671) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi2eta.V' (src/algo_top_SLRB.cpp:671) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi3eta.V' (src/algo_top_SLRB.cpp:671) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi4eta.V' (src/algo_top_SLRB.cpp:671) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'eta_slice.V' (src/algo_top_SLRB.cpp:678) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:748) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi0eta.V' (src/algo_top_SLRB.cpp:751) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi1eta.V' (src/algo_top_SLRB.cpp:751) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi2eta.V' (src/algo_top_SLRB.cpp:751) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi3eta.V' (src/algo_top_SLRB.cpp:751) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi4eta.V' (src/algo_top_SLRB.cpp:751) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'eta_slice.V' (src/algo_top_SLRB.cpp:758) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:829) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi0eta.V' (src/algo_top_SLRB.cpp:832) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi1eta.V' (src/algo_top_SLRB.cpp:832) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi2eta.V' (src/algo_top_SLRB.cpp:832) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi3eta.V' (src/algo_top_SLRB.cpp:832) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'phi4eta.V' (src/algo_top_SLRB.cpp:832) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'eta_slice.V' (src/algo_top_SLRB.cpp:839) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.energy.V' (src/algo_top_SLRB.cpp:1059) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_1.timing.V' (src/algo_top_SLRB.cpp:1059) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.energy.V' (src/algo_top_SLRB.cpp:1062) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_2.timing.V' (src/algo_top_SLRB.cpp:1062) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.energy.V' (src/algo_top_SLRB.cpp:1065) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'ECALRegion3x4_3.timing.V' (src/algo_top_SLRB.cpp:1065) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_1.et.V' (src/algo_top_SLRB.cpp:1068) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_2.et.V' (src/algo_top_SLRB.cpp:1068) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_3.et.V' (src/algo_top_SLRB.cpp:1068) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_4.et.V' (src/algo_top_SLRB.cpp:1069) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_5.et.V' (src/algo_top_SLRB.cpp:1069) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'HCALRegion3x4_6.et.V' (src/algo_top_SLRB.cpp:1069) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:537) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtN.V' (src/algo_top_SLRB.cpp:541) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:668) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:748) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'temp.V' (src/algo_top_SLRB.cpp:829) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'towerEtN.V' (src/algo_top_SLRB.cpp:541) in dimension 3 completely.
+INFO: [XFORM 203-602] Inlining function 'bestOf2SLRB' into 'getPeakBin15NSLRB' (src/algo_top_SLRB.cpp:505) automatically.
+INFO: [XFORM 203-602] Inlining function 'getClusterPosSLRB' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:949) automatically.
+INFO: [XFORM 203-602] Inlining function 'packClusterSLRB' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:969) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:973) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:974) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:996) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1022) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEta' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:997) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1001) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterPhi' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1001) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::satur' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1011) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::brems' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1011) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et5x5' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1008) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::et2x5' into 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:1009) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'bitonicSort16_SLRB' (src/bitonicSort16_SLRB.cpp:11->src/bitonicSort16_SLRB.cpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'tower_t::et' into 'processOutLinkSLRB' (src/algo_top_SLRB.cpp:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::operator unsigned long' into 'processOutLinkSLRB' (src/algo_top_SLRB.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::clusterEnergy' into 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1147) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerEta' into 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1157) automatically.
+INFO: [XFORM 203-602] Inlining function 'Cluster::towerPhi' into 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1157) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRB.cpp:981:33) in function 'stitchClustersSLRB'... converting 245 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (src/algo_top_SLRB.cpp:978:1) in function 'getRegion3x4SLRB'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRB.cpp:825:39) in function 'getClusterValSLRB'... converting 31 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRB.cpp:664:40) in function 'getBremsValPosSLRB'... converting 31 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRB.cpp:744:40) in function 'getBremsValNegSLRB'... converting 31 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (src/algo_top_SLRB.cpp:1263:1) in function 'algo_top_SLRB'... converting 649 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/algo_top_SLRB.cpp:634:28) to (src/algo_top_SLRB.cpp:662:1) in function 'RemoveTmpSLRB'... converting 5 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'getPeakBin15NSLRB' into 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:601->src/algo_top_SLRB.cpp:949) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'stitchClustersSLRB' (src/algo_top_SLRB.cpp:981)...300 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getTowerEtSLRB' (src/algo_top_SLRB.cpp:530)...228 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getRegion3x4SLRB' (src/algo_top_SLRB.cpp:934)...4 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getClusterValSLRB' (src/algo_top_SLRB.cpp:825)...21 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getBremsValPosSLRB' (src/algo_top_SLRB.cpp:664)...18 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'getBremsValNegSLRB' (src/algo_top_SLRB.cpp:744)...18 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'algo_top_SLRB' (src/algo_top_SLRB.cpp:1051)...216 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:11:39 ; elapsed = 00:11:45 . Memory (MB): peak = 1236.746 ; gain = 448.207 ; free physical = 15858 ; free virtual = 80186
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INTERNAL-INFO: never seen llvm instruction 'specclockdomain'(2150)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:14:54 ; elapsed = 00:14:59 . Memory (MB): peak = 2020.746 ; gain = 1232.207 ; free physical = 15007 ; free virtual = 79336
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'algo_top_SLRB' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processInLinkSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'processInLinkSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 900.04 seconds; current allocated memory: 1.216 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.07 seconds; current allocated memory: 1.223 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'initStructureSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'initStructureSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.97 seconds; current allocated memory: 1.225 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.4 seconds; current allocated memory: 1.227 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bestOf2SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'bestOf2SLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.48 seconds; current allocated memory: 1.227 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 1.227 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getPeakBin20NSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getPeakBin20NSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 1.227 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 1.228 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getClusterValSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getClusterValSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 25.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7 seconds; current allocated memory: 1.241 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 12.91 seconds; current allocated memory: 1.264 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getBremsValNegSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getBremsValNegSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.22 seconds; current allocated memory: 1.282 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 10.08 seconds; current allocated memory: 1.300 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getBremsValPosSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getBremsValPosSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 19.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.36 seconds; current allocated memory: 1.317 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 10.11 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'RemoveTmpSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'RemoveTmpSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.79 seconds; current allocated memory: 1.351 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 10.24 seconds; current allocated memory: 1.365 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getRegion3x4SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getRegion3x4SLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 38.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.89 seconds; current allocated memory: 1.372 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 28.2 seconds; current allocated memory: 1.413 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stitchClustersSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'stitchClustersSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 33.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.08 seconds; current allocated memory: 1.441 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.98 seconds; current allocated memory: 1.453 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bitonicSort16_SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'bitonicSort16_SLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 5, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.43 seconds; current allocated memory: 1.456 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1 seconds; current allocated memory: 1.457 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getTowerEtSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getTowerEtSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 5, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.79 seconds; current allocated memory: 1.460 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.49 seconds; current allocated memory: 1.463 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processOutLinkSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'processOutLinkSLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.66 seconds; current allocated memory: 1.463 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 1.463 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'algo_top_SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'algo_top_SLRB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 231.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.37 seconds; current allocated memory: 1.480 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 69.56 seconds; current allocated memory: 1.611 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processInLinkSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processInLinkSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 125.15 seconds; current allocated memory: 3.531 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'initStructureSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'initStructureSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 10.16 seconds; current allocated memory: 3.758 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bestOf2SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bestOf2SLRB'.
+INFO: [HLS 200-111]  Elapsed time: 1.71 seconds; current allocated memory: 3.760 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getPeakBin20NSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getPeakBin20NSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 3.761 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getClusterValSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getClusterValSLRB' is 38042 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getClusterValSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 6.24 seconds; current allocated memory: 3.806 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getBremsValNegSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getBremsValNegSLRB' is 21699 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getBremsValNegSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 34.9 seconds; current allocated memory: 3.941 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getBremsValPosSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getBremsValPosSLRB' is 21730 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getBremsValPosSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 29.65 seconds; current allocated memory: 57.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'RemoveTmpSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'RemoveTmpSLRB' is 12135 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'RemoveTmpSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 92.38 seconds; current allocated memory: 365.424 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getRegion3x4SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'getRegion3x4SLRB' is 99815 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce_reg))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getRegion3x4SLRB'.
+INFO: [HLS 200-111]  Elapsed time: 214.31 seconds; current allocated memory: 883.161 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stitchClustersSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stitchClustersSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 30.84 seconds; current allocated memory: 938.349 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bitonicSort16_SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bitonicSort16_SLRB'.
+INFO: [HLS 200-111]  Elapsed time: 18.33 seconds; current allocated memory: 988.218 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getTowerEtSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getTowerEtSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 6.12 seconds; current allocated memory: 1000.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processOutLinkSLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processOutLinkSLRB'.
+INFO: [HLS 200-111]  Elapsed time: 7.39 seconds; current allocated memory: 1015.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'algo_top_SLRB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_0_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_2_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_3_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_4_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_5_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_6_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_7_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_8_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_9_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_10_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_11_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_12_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_13_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_14_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_15_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_16_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_17_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_18_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_19_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_20_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_21_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_22_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_23_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_24_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_25_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_26_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_27_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_28_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_29_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_30_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_31_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_32_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_33_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_34_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_35_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_36_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_in_37_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_out_0_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_out_1_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_out_2_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_out_3_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_out_4_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'algo_top_SLRB/link_out_5_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'algo_top_SLRB' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-104] Estimated max fanout for 'algo_top_SLRB' is 28420 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'algo_top_SLRB'.
+INFO: [HLS 200-111]  Elapsed time: 82.24 seconds; current allocated memory: 2.315 GB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:29:55 ; elapsed = 00:32:48 . Memory (MB): peak = 8747.777 ; gain = 7959.238 ; free physical = 8602 ; free virtual = 72964
+INFO: [VHDL 208-304] Generating VHDL RTL for algo_top_SLRB.
+INFO: [VLOG 209-307] Generating Verilog RTL for algo_top_SLRB.
+***** C/RTL SYNTHESIS COMPLETED IN 0h32m46s *****
+***** EXPORT IP *****
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 28 12:04:36 2021...
+***** EXPORT IP COMPLETED IN 0h0m24s *****
+***** GENERATING WRAPPERS *****
+python: can't open file '../wrapper_generator.py': [Errno 2] No such file or directory
+    while executing
+"exec python ../wrapper_generator.py src/algo_top_parameters.h --wrapper ../rtl/algo_top_wrapper.vhd"
+    invoked from within
+"if {$opt(export)} {
+  puts "***** EXPORT IP *****"
+  set time_start [clock clicks -milliseconds]
+  export_design -format ip_catalog
+  set time_end [cl..."
+    (file "run_hls.tcl" line 75)
+    invoked from within
+"source run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total elapsed time: 1997.71 seconds; peak allocated memory: 3.941 GB.
+INFO: [Common 17-206] Exiting vivado_hls at Tue Dec 28 12:04:42 2021...

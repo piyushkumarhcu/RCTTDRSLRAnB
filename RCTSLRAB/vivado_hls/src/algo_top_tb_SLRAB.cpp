@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <cstdlib>
+#include <stdint.h>
+#include <unistd.h>
+
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <string>
+#include "algo_top_SLRAB.h"
+#include "algo_top_parameters_SLRAB.h"
+
+using namespace std;
+
+int main() {
+
+        ap_uint<384> link_inSLRA[N_INPUT_LINKS_SLRA];
+        ap_uint<384> link_inSLRB[N_INPUT_LINKS_SLRB];
+	ap_uint<384> link_out[N_OUTPUT_LINKS];
+
+
+          link_inSLRA[0] = "0x00000000000046C01480000000002F01200000000064E00B00000000000000300000000000000000000000000000000A";
+          link_inSLRA[1] = "0x000000000000C8E024000000000E0A01E000000001209019000000000000000000000000000000000000000000000000";
+
+          link_inSLRB[0] = "0x00000000000000000000000000000000080000000002601200050000000000002000000000000000000000000000000A";
+          link_inSLRB[1] = "0x000000000000000000000000000000000000000000463014000000000000000000000000000000003000000000000000";
+          link_inSLRB[2] = "0x000000000000000000000000000000000000000001200019000000000000000000000000000000000000000000000000";
+          link_inSLRB[3] = "0x000000000000000000000000000000000000000000E0101E00000000000000000000000000000000000B000000000000";
+          link_inSLRB[4] = "0x000000000000000000000000000000000000000000C85024000000000000000000000000000000000000000000000000";
+          link_inSLRB[5] = "0x000000000000000000000000000000000000000000608037000000000000000000000000000000000000000000000000";
+	// Run the algorithm
+
+	  algo_top_SLRAB(link_inSLRA, link_inSLRB, link_out);
+
+
+	  	cout << hex << "link_out[0]: " << link_out[0] << endl;
+	  	cout << hex << "link_out[1]: " << link_out[1] << endl;
+	  	cout << hex << "link_out[2]: " << link_out[2] << endl;
+	  	cout << hex << "link_out[3]: " << link_out[3] << endl;
+
+return 0;
+
+}
+
+
+
+
